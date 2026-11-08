@@ -1,0 +1,94 @@
+/* La Bonita Brunch: blog styling (only affects blog pages) */
+body[class*="collection-type-blog"]{
+  --lb-ink:#1d1d1f;--lb-muted:#6e6e73;--lb-bg:#fbfbfa;--lb-hair:#e3e1dc;--lb-sun:#dcbf55;--lb-sun-soft:#fff4d1;
+  --lb-sans:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Helvetica,Arial,sans-serif;
+  background:var(--lb-bg);
+}
+body[class*="collection-type-blog"] *:not(.lb-script){font-family:var(--lb-sans)!important}
+body[class*="collection-type-blog"] .header,
+body[class*="collection-type-blog"] .header-announcement-bar-wrapper,
+body[class*="collection-type-blog"] #page section,
+body[class*="collection-type-blog"] .section-background,
+body[class*="collection-type-blog"] .section-border{background:var(--lb-bg)!important}
+body[class*="collection-type-blog"] .header{border-bottom:1px solid var(--lb-hair)}
+
+/* Logo instead of plain site title */
+body[class*="collection-type-blog"] #site-title{
+  display:block;width:138px;height:40px;font-size:0!important;color:transparent!important;
+  background:url("https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01955cd49b2705b07c159/1794120021687/lb-logo-dark-ink.png") left center/contain no-repeat;
+}
+body[class*="collection-type-blog"] .header-nav-item a,
+body[class*="collection-type-blog"] .header-menu-nav-item a{font-size:15px!important;font-weight:500;color:var(--lb-ink)!important;letter-spacing:0}
+
+/* Headings and text */
+body[class*="collection-type-blog"] h1,
+body[class*="collection-type-blog"] h2,
+body[class*="collection-type-blog"] h3,
+body[class*="collection-type-blog"] .blog-title,
+body[class*="collection-type-blog"] .blog-title a{font-weight:700!important;letter-spacing:-.025em!important;color:var(--lb-ink)!important;line-height:1.12!important}
+body[class*="collection-type-blog"] .blog-item-title h1,
+body[class*="collection-type-blog"] .entry-title{font-size:clamp(34px,5.2vw,56px)!important}
+body[class*="collection-type-blog"] .blog-item-content h2,
+body[class*="collection-type-blog"] .sqs-html-content h2{font-size:clamp(24px,3vw,30px)!important;margin-top:1.6em!important}
+body[class*="collection-type-blog"] .blog-basic-grid .blog-title{font-size:22px!important;text-align:left!important}
+body[class*="collection-type-blog"] p,
+body[class*="collection-type-blog"] li{font-size:17px;line-height:1.6;color:var(--lb-ink)}
+body[class*="collection-type-blog"] .blog-excerpt p{color:var(--lb-muted)!important;font-size:16px!important}
+body[class*="collection-type-blog"] time,
+body[class*="collection-type-blog"] .blog-date,
+body[class*="collection-type-blog"] .blog-meta-item,
+body[class*="collection-type-blog"] .blog-meta-section{color:var(--lb-muted)!important;font-size:14px!important;letter-spacing:0}
+
+/* Links and read more */
+body[class*="collection-type-blog"] .sqs-html-content a,
+body[class*="collection-type-blog"] .blog-item-content a{color:var(--lb-ink)!important;text-decoration:underline;text-decoration-color:var(--lb-sun);text-decoration-thickness:2px;text-underline-offset:3px}
+body[class*="collection-type-blog"] .blog-more-link{font-weight:600!important;color:var(--lb-ink)!important;border-bottom:2px solid var(--lb-sun)}
+
+/* Photos */
+body[class*="collection-type-blog"] .blog-image-wrapper,
+body[class*="collection-type-blog"] .blog-image-wrapper img,
+body[class*="collection-type-blog"] .image-block-wrapper,
+body[class*="collection-type-blog"] .blog-item-top-wrapper img{border-radius:18px;overflow:hidden}
+
+/* Hide template footer (it showed the account email); custom footer comes from code injection */
+body[class*="collection-type-blog"] footer.sections{display:none!important}
+body[class*="collection-type-blog"] .blog-item-author-profile-wrapper{display:none!important}
+
+/* Injected header Order button + footer */
+.lb-blog-order,.lb-blog-foot{display:none}
+body[class*="collection-type-blog"] .lb-blog-order{display:inline-flex;align-items:center;margin-left:22px;padding:9px 18px;border-radius:999px;background:var(--lb-sun);color:#1d1d1f!important;font-weight:600;font-size:15px;text-decoration:none!important}
+body[class*="collection-type-blog"] .lb-blog-foot{display:block;border-top:1px solid var(--lb-hair);background:var(--lb-bg);padding:44px 6vw 56px;color:var(--lb-muted);font-size:15px;line-height:1.6}
+.lb-blog-foot .lbf-in{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:space-between;align-items:flex-start}
+.lb-blog-foot img{width:120px;height:auto;display:block;margin-bottom:10px}
+.lb-blog-foot a{color:var(--lb-ink)!important;text-decoration:none}
+.lb-blog-foot a:hover{text-decoration:underline}
+.lb-blog-foot nav{display:flex;flex-wrap:wrap;gap:8px 20px}
+.lb-blog-foot .lbf-cta{display:inline-block;margin-top:12px;padding:10px 20px;border-radius:999px;background:var(--lb-sun);color:#1d1d1f!important;font-weight:600}
+@media (max-width:767px){
+  body[class*="collection-type-blog"] .lb-blog-order{display:none}
+  body[class*="collection-type-blog"] .blog-basic-grid .blog-title{font-size:21px!important}
+}
+/* Prev/next post links */
+body[class*="collection-type-blog"] .item-pagination-title{font-size:20px!important;line-height:1.25!important}
+body[class*="collection-type-blog"] .item-pagination{border-top:1px solid var(--lb-hair)}
+/* Dark theme: same black as the homepage, always on */
+@media all{
+  body[class*="collection-type-blog"]{--lb-ink:#f5f5f7;--lb-muted:#a1a1a6;--lb-bg:#0d0d0e;--lb-hair:#2c2c30;--lb-sun:#e4c862;--lb-sun-soft:#3a2f0c;color-scheme:dark;color:var(--lb-ink)}
+  body[class*="collection-type-blog"] #site-title{background-image:url("https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01955d5d60d59e0f22dc0/1794120021840/lb-logo-light-ink.png")}
+  body[class*="collection-type-blog"] .lb-blog-foot img{content:url("https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01955d5d60d59e0f22dc0/1794120021840/lb-logo-light-ink.png")}
+  body[class*="collection-type-blog"] .header-menu,
+  body[class*="collection-type-blog"] .header-menu-bg{background:var(--lb-bg)!important}
+  body[class*="collection-type-blog"] .burger-inner>div{background-color:var(--lb-ink)!important}
+  body[class*="collection-type-blog"] .header-menu-nav-item a,
+  body[class*="collection-type-blog"] .blog-item-content,
+  body[class*="collection-type-blog"] .blog-item-content strong,
+  body[class*="collection-type-blog"] .item-pagination-link,
+  body[class*="collection-type-blog"] .blog-author-name,
+  body[class*="collection-type-blog"] .blog-meta-item a{color:var(--lb-ink)!important}
+  body[class*="collection-type-blog"] .item-pagination-icon svg,
+  body[class*="collection-type-blog"] .item-pagination-icon path{stroke:var(--lb-ink)!important;fill:none}
+  body[class*="collection-type-blog"] .lb-blog-order,
+  body[class*="collection-type-blog"] .lb-blog-foot .lbf-cta{color:#1d1d1f!important}
+}
+/* Post dates */
+body[class*="collection-type-blog"] .blog-meta-item span,body[class*="collection-type-blog"] .blog-date *{color:var(--lb-muted)!important}
