@@ -1,6 +1,6 @@
 # La Bonita Brunch
 
-> Family-owned Mexican breakfast and brunch food truck in Redmond, Oregon. Homemade breakfast burritos, burritos, tacos and flautas made with real eggs cracked to order. Order ahead for pickup online. Menu guides and stories on the blog.
+> Family-owned Mexican breakfast and brunch food truck in Redmond, Oregon. Homemade breakfast burritos, burritos, tacos and flautas made with real eggs cracked to order. Order ahead for pickup online or get delivery on DoorDash. Menu guides and stories on the blog.
 
 ## Key facts
 
@@ -11,6 +11,9 @@
 - Phone: (541) 678-4991
 - Hours: Monday–Friday 7:00 am–2:30 pm; Saturday 7:00 am–2:00 pm; Sunday closed (Pacific Time)
 - Ordering: Walk up to the window, or order ahead for pickup online
+- Online ordering cutoff: 2:00 pm Monday–Friday and 1:30 pm Saturday
+- Delivery: Available through DoorDash
+- Ratings: 5.0 stars from 194 Google reviews; 4.9 on Yelp
 - Seating: Outdoor tables and umbrellas next to the truck; pets welcome
 - Any burrito can be made as a bowl (no tortilla)
 - Veterans get free coffee
@@ -20,6 +23,7 @@
 
 - [Website](https://labonitabrunch.net/): Menu, photos, hours and location
 - [Order online](https://la-bonita-brunch-redmond.cloveronline.com/menu/all): Current menu and prices, order ahead for pickup
+- [Delivery on DoorDash](https://www.doordash.com/store/la-bonita-brunch-redmond-35873245/): Delivery in the Redmond area
 - [Instagram](https://www.instagram.com/labonita_brunch/)
 - [Facebook](https://www.facebook.com/p/La-Bonita-Brunch-61579161419085/)
 - [Yelp](https://www.yelp.com/biz/la-bonita-brunch-redmond)
@@ -97,13 +101,19 @@
 We're a food truck at 958 NW 6th St in Redmond, Oregon, just north of Brightside Thrift.
 
 **What are your hours?**
-We're open Monday through Friday from 7:00 am to 2:30 pm and Saturday from 7:00 am to 2:00 pm. We're closed on Sunday.
+We're open Monday through Friday from 7:00 am to 2:30 pm and Saturday from 7:00 am to 2:00 pm. We're closed on Sunday. Online orders are taken until 2:00 pm on weekdays and 1:30 pm on Saturday.
 
 **What kind of food do you serve?**
 We serve homemade Mexican breakfast and brunch: breakfast burritos, burritos, tacos, flautas, churro bites and carlota.
 
 **Can I order online?**
 Yes. You can order ahead for pickup through our Clover online ordering page.
+
+**Do you deliver?**
+Yes. You can get delivery through DoorDash.
+
+**Do you speak Spanish?**
+Yes. ¡Hablamos español! Our family speaks English and Spanish.
 
 **Can I get my burrito as a bowl?**
 Yes. Any burrito can be made as a bowl with no tortilla.
