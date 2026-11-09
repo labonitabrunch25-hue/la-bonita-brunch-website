@@ -66,3 +66,5 @@ Breakfast burritos, tacos & more. Every burrito can be made as a bowl. Current p
 - **Fries**: Side of fries.
 
 [Order now](https://la-bonita-brunch-redmond.cloveronline.com/menu/all)
+
+New here? Read [what to order](https://labonitabrunch.net/blog/first-time-what-to-order).

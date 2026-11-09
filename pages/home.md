@@ -10,7 +10,9 @@ url: https://labonitabrunch.net/
 
 Real eggs cracked to order. Everything made fresh at our family food truck in Redmond.
 
-[Order for pickup](https://la-bonita-brunch-redmond.cloveronline.com/menu/all) · [Explore the menu](menu.md)
+[Order for pickup](https://la-bonita-brunch-redmond.cloveronline.com/menu/all) · [Get delivery](https://www.doordash.com/store/la-bonita-brunch-redmond-35873245/) · [Explore the menu](menu.md)
+
+★ 5.0 from 194 Google reviews · 4.9 on Yelp
 
 - **Fresh eggs:** Real eggs, cracked to order
 - **Made to order:** Fresh off the griddle
@@ -32,6 +34,8 @@ Tap the button and we'll choose your order. (Interactive "Surprise me" button on
 ## Skip the line: order online for pickup
 
 Order ahead and we'll have it hot when you pull up. See today's full menu and prices, customize your order and pay online. We'll have it ready at the window.
+
+Online orders until 2:00 pm weekdays and 1:30 pm Saturday. Prefer delivery? [Order on DoorDash](https://www.doordash.com/store/la-bonita-brunch-redmond-35873245/).
 
 [Start your order](https://la-bonita-brunch-redmond.cloveronline.com/menu/all)
 

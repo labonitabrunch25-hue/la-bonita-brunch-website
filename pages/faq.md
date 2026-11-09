@@ -11,7 +11,7 @@ We're a food truck at 958 NW 6th St in Redmond, Oregon, just north of Brightside
 
 ## What are your hours?
 
-We're open Monday through Friday from 7:00 am to 2:30 pm and Saturday from 7:00 am to 2:00 pm. We're closed on Sunday.
+We're open Monday through Friday from 7:00 am to 2:30 pm and Saturday from 7:00 am to 2:00 pm. We're closed on Sunday. Online orders are taken until 2:00 pm on weekdays and 1:30 pm on Saturday.
 
 ## What kind of food do you serve?
 
@@ -20,6 +20,14 @@ We serve homemade Mexican breakfast and brunch: breakfast burritos, burritos, ta
 ## Can I order online?
 
 Yes. You can order ahead for pickup through our Clover online ordering page.
+
+## Do you deliver?
+
+Yes. You can get delivery through [DoorDash](https://www.doordash.com/store/la-bonita-brunch-redmond-35873245/).
+
+## Do you speak Spanish?
+
+Yes. ¡Hablamos español! Our family speaks English and Spanish.
 
 ## Can I get my burrito as a bowl?
 
