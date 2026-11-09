@@ -92,3 +92,13 @@ body[class*="collection-type-blog"] .item-pagination{border-top:1px solid var(--
 }
 /* Post dates */
 body[class*="collection-type-blog"] .blog-meta-item span,body[class*="collection-type-blog"] .blog-date *{color:var(--lb-muted)!important}
+/* Blog page heading + post photo */
+body[class*="collection-type-blog"] .lb-blog-hero{max-width:1100px;margin:0 auto;padding:56px 4vw 8px}
+body[class*="collection-type-blog"] .lb-blog-hero h1{font-size:clamp(34px,5vw,52px)!important;margin:0 0 10px}
+body[class*="collection-type-blog"] .lb-blog-hero p{color:var(--lb-muted)!important;font-size:18px;max-width:60ch;margin:0}
+body[class*="collection-type-blog"] .lb-post-photo{margin:8px 0 28px;padding:0}
+body[class*="collection-type-blog"] .lb-post-photo img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:18px;display:block}
+/* Phone menu */
+body[class*="collection-type-blog"] .header-menu-nav-item a{font-size:26px!important;font-weight:600}
+body[class*="collection-type-blog"] .lb-menu-order{display:inline-block;align-self:center;margin-top:22px;padding:12px 26px;border-radius:999px;background:var(--lb-sun);color:#1d1d1f!important;font-weight:600;font-size:18px;text-decoration:none!important}
+body[class*="collection-type-blog"] .header-menu-nav-list{text-align:center}

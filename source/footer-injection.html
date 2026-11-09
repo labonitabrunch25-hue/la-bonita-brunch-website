@@ -23,6 +23,22 @@
   if(!/collection-type-blog/.test(document.body.className))return;
   var f=document.querySelector('.lb-blog-foot');var site=document.getElementById('siteWrapper')||document.body;
   if(f&&site!==f.parentNode){site.appendChild(f);}
+  // Blog list: one real H1 + intro, post titles become H2, photos get descriptions
+  if(/view-list/.test(document.body.className)&&!document.querySelector('.lb-blog-hero')){
+    document.querySelectorAll('h1.blog-title').forEach(function(h){var n=document.createElement('h2');n.className=h.className;n.innerHTML=h.innerHTML;h.parentNode.replaceChild(n,h);});
+    document.querySelectorAll('.blog-basic-grid--container, article.blog-basic-grid--container, .blog-item').forEach(function(a){var t=a.querySelector('.blog-title');var im=a.querySelector('img');if(t&&im&&!im.getAttribute('alt'))im.setAttribute('alt',t.textContent.trim());});
+    var grid=document.querySelector('.blog-basic-grid');
+    if(grid){var hd=document.createElement('header');hd.className='lb-blog-hero';hd.innerHTML='<h1>La Bonita Brunch Blog</h1><p>Menu guides, food stories and news from our family-owned Mexican breakfast food truck at 958 NW 6th St in Redmond, Oregon.</p>';grid.parentNode.insertBefore(hd,grid);}
+  }
+  // Blog post: show the featured photo at the top, with a description; drop the hidden author picture
+  if(/view-item/.test(document.body.className)&&!document.querySelector('.lb-post-photo')){
+    var og=document.querySelector('meta[property="og:image"]');var h1=document.querySelector('h1.entry-title');var body=document.querySelector('.blog-item-content-wrapper, .blog-item-content');
+    if(og&&h1&&body){var f=document.createElement('figure');f.className='lb-post-photo';var im=document.createElement('img');im.src=og.content.replace(/^http:/,'https:');im.alt=h1.textContent.trim();im.width=1500;im.height=1000;im.loading='eager';f.appendChild(im);body.parentNode.insertBefore(f,body);}
+    document.querySelectorAll('.author-avatar, .blog-item-author-profile-wrapper').forEach(function(e){e.remove();});
+  }
+  // Phone menu: add an Order button
+  var mi=document.querySelector('.header-menu-nav-item');var mnav=mi&&mi.parentElement;
+  if(mnav&&!document.querySelector('.lb-menu-order')){var mo=document.createElement('a');mo.className='lb-menu-order';mo.textContent='Order for pickup';mo.href='https://la-bonita-brunch-redmond.cloveronline.com/menu/all';mo.target='_blank';mo.rel='noopener';mnav.appendChild(mo);}
   var nav=document.querySelector('.header-display-desktop .header-nav-list');
   if(nav&&!document.querySelector('.lb-blog-order')){
     var a=document.createElement('a');a.className='lb-blog-order';a.textContent='Order';
