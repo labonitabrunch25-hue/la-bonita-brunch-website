@@ -13,7 +13,7 @@ image: https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/6af0fa555
 
 # First Time at La Bonita Brunch? Here's What to Order
 
-![First Time at La Bonita Brunch? Here's What to Order](https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/6af0fa555c24a80d1bd2b1e0/6af0fab2f1031b7f41ae3ed2/1794178564325/la-bonita-breakfast-burrito.jpg)
+![Breakfast burrito with café de olla and Mexican sodas at La Bonita Brunch food truck in Redmond, OR](https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/6af0fa555c24a80d1bd2b1e0/6af0fab2f1031b7f41ae3ed2/1794178564325/la-bonita-breakfast-burrito.jpg)
 
 If you've driven past our truck at 958 NW 6th St in Redmond and wondered what to get, this guide is for you. We're a family-owned Mexican breakfast and brunch food truck, and everything on the menu is made fresh to order.
 

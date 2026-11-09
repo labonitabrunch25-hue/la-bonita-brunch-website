@@ -13,7 +13,7 @@ image: https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/6af0fa555
 
 # Real Eggs, Cracked to Order: How We Make Our Breakfast Burritos
 
-![Real Eggs, Cracked to Order: How We Make Our Breakfast Burritos](https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/6af0fa555c24a80d1bd2b1e0/6af0fc315c24a80d1bd2de29/1794178642797/la-bonita-fresh-eggs-griddle.jpg)
+![Fresh eggs cracked on the griddle with pico de gallo at La Bonita Brunch in Redmond, OR](https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/6af0fa555c24a80d1bd2b1e0/6af0fc315c24a80d1bd2de29/1794178642797/la-bonita-fresh-eggs-griddle.jpg)
 
 At La Bonita Brunch, there's one rule we don't bend: every egg is a real egg, cracked when you order. We never use powdered or pre-packaged eggs. It takes a little longer, and we think you can taste the difference.
 

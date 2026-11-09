@@ -13,7 +13,7 @@ image: https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/6af0fa555
 
 # Café de Olla, Churro Bites and Carlota: Our Mexican Coffee and Sweets
 
-![Café de Olla, Churro Bites and Carlota: Our Mexican Coffee and Sweets](https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/6af0fa555c24a80d1bd2b1e0/6af0fcbc02b24b2679cb1680/1794178609057/la-bonita-churro-bites.jpg)
+![Churro bites with cinnamon sugar from La Bonita Brunch in Redmond, OR](https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/6af0fa555c24a80d1bd2b1e0/6af0fcbc02b24b2679cb1680/1794178609057/la-bonita-churro-bites.jpg)
 
 Breakfast is our specialty, but some of our favorite things come at the end of the meal. Here's a quick look at the coffee and sweets you'll find at our truck.
 
