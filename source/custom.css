@@ -102,3 +102,5 @@ body[class*="collection-type-blog"] .lb-post-photo img{width:100%;height:auto;as
 body[class*="collection-type-blog"] .header-menu-nav-item a{font-size:26px!important;font-weight:600}
 body[class*="collection-type-blog"] .lb-menu-order{display:inline-block;align-self:center;margin-top:22px;padding:12px 26px;border-radius:999px;background:var(--lb-sun);color:#1d1d1f!important;font-weight:600;font-size:18px;text-decoration:none!important}
 body[class*="collection-type-blog"] .header-menu-nav-list{text-align:center}
+/* Footer link underline */
+body[class*="collection-type-blog"] .lb-blog-foot .lbf-in > div > a:not(.lbf-cta){text-decoration:underline;text-decoration-color:var(--lb-sun);text-decoration-thickness:2px;text-underline-offset:3px}
