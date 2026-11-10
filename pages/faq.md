@@ -35,7 +35,7 @@ Yes. Any burrito can be made as a bowl with no tortilla.
 
 ## Do you have meatless options?
 
-Yes. The Ranchero, Nopal, Miles and Bean & Cheese burritos, the Mexican Scramble and Day's Tacos have no meat.
+Yes. The Ranchero, Nopal, Miles', Mia's and Bean & Cheese burritos, Day's Tacos and the Bean N Cheese Taco have no meat.
 
 ## Do you offer anything for veterans?
 
