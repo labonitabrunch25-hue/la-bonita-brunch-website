@@ -1,18 +1,16 @@
 ---
-title: "La Bonita Brunch | Breakfast Burritos in Redmond, OR"
-description: "Family-owned Mexican breakfast food truck in Redmond, OR. Homemade breakfast burritos, tacos and flautas with fresh-cracked eggs. Order ahead for pickup."
+title: "La Bonita Brunch | Breakfast Burritos & Lunch in Redmond, OR"
+description: "Family-owned Mexican breakfast & lunch food truck in Redmond, OR. Homemade breakfast burritos, tacos and flautas with fresh-cracked eggs. Order ahead for pickup or delivery."
 url: https://labonitabrunch.net/
 ---
 
-# Breakfast, made by hand.
-
-*Mexican breakfast & brunch food truck · Redmond, Oregon*
+# Mexican breakfast & brunch food truck · Redmond, Oregon<br>Breakfast, made by hand.
 
 Real eggs cracked to order. Everything made fresh at our family food truck in Redmond.
 
 [Order for pickup](https://la-bonita-brunch-redmond.cloveronline.com/menu/all) · [Get delivery](https://www.doordash.com/store/la-bonita-brunch-redmond-35873245/) · [Explore the menu](menu.md)
 
-★ 5.0 from 194 Google reviews · 4.9 on Yelp
+★ 5.0 from 190+ Google reviews · 4.9 on Yelp
 
 - **Fresh eggs:** Real eggs, cracked to order
 - **Made to order:** Fresh off the griddle
@@ -21,7 +19,7 @@ Real eggs cracked to order. Everything made fresh at our family food truck in Re
 
 ## Our menu: breakfast burritos, tacos & more
 
-Every burrito can be made as a bowl. Current prices are in our online ordering. See the [full menu](menu.md).
+Every burrito can be made as a bowl. Current prices are in our online ordering. See the [full menu](menu.md) (live at https://labonitabrunch.net/menu).
 
 ## Peek inside: what's inside our burritos
 

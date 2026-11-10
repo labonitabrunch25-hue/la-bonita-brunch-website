@@ -1,9 +1,12 @@
 ---
-title: Menu
-url: https://labonitabrunch.net/#menu
+title: "Menu: Breakfast Burritos, Tacos & Flautas in Redmond, OR"
+description: "The full La Bonita Brunch menu: breakfast burritos, tacos, flautas, churro bites and café de olla from our family food truck at 958 NW 6th St, Redmond, OR."
+url: https://labonitabrunch.net/menu
 ---
 
 # Our menu
+
+*Live page: https://labonitabrunch.net/menu (also shown in the menu section of the homepage). Source: [source/menu-page.html](../source/menu-page.html).*
 
 Breakfast burritos, tacos & more. Every burrito can be made as a bowl. Current prices are in our [online ordering](https://la-bonita-brunch-redmond.cloveronline.com/menu/all).
 
