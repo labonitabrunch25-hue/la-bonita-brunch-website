@@ -31,11 +31,11 @@ Our churro bites are coated in cinnamon sugar and finished with a drizzle of caj
 
 ## Carlota
 
-Carlota is a no-bake Mexican icebox cake. Ours is cool, creamy and a little sweet-tart, topped with cajeta. If you're ordering online, you'll find it listed as Lemon Cookie Cream.
+Carlota is a no-bake Mexican icebox cake. Ours has creamy layers of lemon cookies, topped with cajeta. If you're ordering online, you'll find it listed as Carlota Dessert.
 
 ## Something cold to drink
 
-We keep Mexican Coca-Cola made with cane sugar and Jarritos fruit sodas ice cold in glass bottles, plus Red Bull, iced tea, juice and water.
+We keep Mexican Coca-Cola made with cane sugar and Jarritos fruit sodas ice cold in glass bottles, plus Red Bull, sugar-free green iced tea, orange or apple juice and bottled water.
 
 ## Stop by
 

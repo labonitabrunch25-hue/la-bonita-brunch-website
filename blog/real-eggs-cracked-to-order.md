@@ -19,24 +19,24 @@ At La Bonita Brunch, there's one rule we don't bend: every egg is a real egg, cr
 
 ## Why fresh-cracked eggs matter
 
-Eggs cooked to order stay tender and full of flavor. Whether they're scrambled into a Mexican Scramble or left runny in a Ranchero, they hit the griddle when your order comes in, not hours earlier.
+Eggs cooked to order stay tender and full of flavor. Whether they're scrambled into a Breakfast Burrito or left runny in a Ranchero, they hit the griddle when your order comes in, not hours earlier.
 
 ## Our breakfast burritos
 
 - **Ranchero Burrito:** runny eggs, beans, cheese, green salsa and sour cream.
 - **Breakfast Burrito:** eggs, potato and cheese with your choice of meat, like bacon.
-- **Mexican Scramble:** eggs scrambled with tomato, onion and cilantro, plus beans and cheese.
+- **Mia's Burrito:** egg, potato and cheese.
 - **Breakfast Asada Burrito:** a breakfast burrito made with carne asada.
 - **Nopal Burrito:** eggs, beans, cheese and grilled nopales (cactus).
-- **Miles Burrito:** eggs, beans and cheese. A simple classic.
+- **Miles' Burrito:** eggs, beans and cheese. A simple classic.
 
 ## Can I get it as a bowl?
 
-Yes. Any burrito can be made as a bowl with no tortilla. The Mexican Scramble is especially good this way.
+Yes. Any burrito can be made as a bowl with no tortilla. Just ask when you order.
 
 ## Do you have meatless breakfast options?
 
-Yes. The Ranchero, Nopal, Miles and Bean & Cheese burritos, the Mexican Scramble and Day's Tacos are all meatless.
+Yes. The Ranchero, Nopal, Miles', Mia's and Bean & Cheese burritos, Day's Tacos and the Bean N Cheese Taco are all meatless.
 
 ## Add our house salsas
 

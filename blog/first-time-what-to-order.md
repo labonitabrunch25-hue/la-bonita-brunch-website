@@ -23,11 +23,11 @@ Ask our regulars and most will point you to the Ranchero Burrito. It's runny egg
 
 ## Want meat? Try a Breakfast Burrito or the Broadway
 
-Our Breakfast Burrito comes with eggs, potato and cheese plus your choice of meat, like bacon. If you're more of a lunch person, the Broadway Burrito is a big one: steak, french fries, guacamole, sour cream and cheese.
+Our Breakfast Burrito comes with eggs, potato and cheese plus your choice of meat, like bacon. If you're more of a lunch person, the Broadway Burrito is a big one: carne asada, cheese, french fries, guacamole and sour cream.
 
 ## Don't skip the tacos and flautas
 
-Day's Tacos are crispy fried tacos filled with mashed potato and topped with lettuce, tomato, sour cream and queso fresco. Our flautas come served in a cup over tomato broth with lettuce, guac, sour cream, queso fresco and cheddar. Prefer something classic? The Asada Taco keeps it simple with carne asada, onion, cilantro and fresh guacamole.
+Day's Tacos are four crispy potato tacos topped with lettuce, cheese, tomato and sour cream. Our flautas are rolled taquitos with your choice of beef or chicken, topped with sour cream, guac, cheese and lettuce. Prefer something classic? The Asada Taco keeps it simple with carne asada, onion, cilantro and fresh guacamole.
 
 ## Any burrito can be a bowl
 
