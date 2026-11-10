@@ -1,0 +1,423 @@
+<style>
+/* Squarespace: hide the template header/footer and make this code block full width */
+#header,.header,header#header,#footer-sections,footer.sections,.sqs-announcement-bar-dropzone{display:none!important}
+html,body{background:var(--bg)!important}
+.page-section:has(#lb-site){padding:0!important;min-height:0!important;background:none!important}
+.page-section:has(#lb-site) .content-wrapper,.page-section:has(#lb-site) .content{padding:0!important;max-width:none!important;width:100%!important}
+.page-section:has(#lb-site) .section-background{display:none!important}
+.page-section:has(#lb-site) .fluid-engine{display:block!important}
+.page-section:has(#lb-site) .fe-block{grid-area:auto!important;width:100%!important}
+.page-section:has(#lb-site) .sqs-block,.page-section:has(#lb-site) .sqs-block-content{padding:0!important}
+#lb-site{width:100%;font-family:var(--sans);font-size:17px;line-height:1.47;letter-spacing:-.01em;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;text-align:left}
+#lb-site img{max-width:100%}
+#lb-site [hidden]{display:none!important}
+#lb-site h1,#lb-site h2,#lb-site h3{font-family:var(--sans);color:var(--ink);text-transform:none}
+#lb-site h3{font-weight:700}
+#lb-site p{font-family:inherit}
+#lb-site a{text-decoration:none}
+#lb-site .link:hover{text-decoration:underline}
+</style>
+<div id="lb-site">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap">
+<style>
+/* Layout: quiet neutral canvas, full-bleed photo tiles, product-page rhythm. Script face only for the wordmark; sun yellow is the single accent. */
+:root{
+--bg:#fbfbfa;
+--surface:#f2f1ee;
+--card:#ffffff;
+--ink:#1d1d1f;
+--muted:#6e6e73;
+--hair:#e3e1dc;
+--sun:#dcbf55;
+--sun-soft:#fff4d1;
+--open:#1f8a4c;
+--script:"Kaushan Script","Brush Script MT",cursive;
+--sans:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Helvetica,Arial,sans-serif;
+--r-lg:28px; --r-md:18px;
+}
+@media all{:root:not([data-theme="light"]){--bg:#0d0d0e;--surface:#17171a;--card:#1c1c1f;--ink:#f5f5f7;--muted:#a1a1a6;--hair:#2c2c30;--sun:#e4c862;--sun-soft:#3a2f0c;--open:#3fcf7a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d0d0e;--surface:#17171a;--card:#1c1c1f;--ink:#f5f5f7;--muted:#a1a1a6;--hair:#2c2c30;--sun:#e4c862;--sun-soft:#3a2f0c;--open:#3fcf7a;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.47;letter-spacing:-.01em;-webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;text-wrap:balance;letter-spacing:-.025em}
+p{margin:0}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:10px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+/* Nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 80%,transparent);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--hair)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:16px}
+.logo{display:flex;align-items:center;gap:8px;text-decoration:none}
+.logo img,.fbrand img{height:40px;width:auto;display:block}
+.fbrand{display:flex;align-items:center;gap:14px}
+.fbrand img{height:30px}
+.fbrand{flex-wrap:wrap}
+.phone a,.fbrand a{color:inherit;text-decoration:none}
+.lg-d{display:none!important}
+@media all{:root:not([data-theme="light"]) .lg-l{display:none!important}:root:not([data-theme="light"]) .lg-d{display:block!important}}
+:root[data-theme="dark"] .lg-l{display:none!important}:root[data-theme="dark"] .lg-d{display:block!important}
+.nav-links{display:flex;align-items:center;gap:26px;font-size:.88rem}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.nav-links a:hover{color:var(--ink)}
+@media (max-width:640px){.nav-links{gap:13px;font-size:.8rem}.nav-links a.hide-sm[href="#peek"]{display:none}.logo img{height:32px}}
+@media (max-width:360px){.nav-links a.hide-sm[href="/blog"]{display:none}}
+.pill{display:inline-flex;align-items:center;gap:8px;border:0;cursor:pointer;text-decoration:none;font-weight:600;border-radius:999px;padding:12px 22px;font-size:1rem;transition:transform .2s ease,background .2s ease}
+.pill:active{transform:scale(.97)}
+.pill.primary{background:var(--ink);color:var(--bg)}
+.pill.sun{background:var(--sun);color:#1d1d1f}
+.pill.quiet{background:var(--surface);color:var(--ink)}
+.pill.sm{padding:7px 15px;font-size:.85rem}
+.link{color:var(--ink);text-decoration:none;font-weight:600}
+.link::after{content:" ›"}
+.link:hover{text-decoration:underline}
+/* Photo placeholders */
+.photo{position:relative;overflow:hidden;background:
+radial-gradient(120% 90% at 20% 15%,color-mix(in srgb,var(--sun) 22%,var(--surface)) 0%,var(--surface) 55%),var(--surface);
+border-radius:var(--r-lg);display:flex;align-items:flex-end;min-height:0}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.photo .ph{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+.photo .ph span{display:flex;flex-direction:column;align-items:center;gap:8px}
+.photo .ph svg{opacity:.55}
+/* Hero */
+.hero{padding-block:72px 28px;text-align:center}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:600;color:var(--muted)}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.status.open{color:var(--open)}
+.status.open i{background:var(--open);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 6px color-mix(in srgb,var(--open) 18%,transparent)}}
+.kicker{font-size:.95rem;font-weight:600;color:var(--ink);margin:0 auto 14px;max-width:30ch;text-wrap:balance}
+.hero h1{font-size:clamp(2.8rem,7.4vw,5.4rem);font-weight:700;line-height:1.03;margin-top:16px}
+.hero h1 .script{font-family:var(--script);font-weight:400;letter-spacing:0;color:var(--sun);display:inline-block;padding:0 .08em;transform:rotate(-3deg)}
+.hero .sub{font-size:clamp(1.15rem,2.2vw,1.45rem);color:var(--muted);margin:18px auto 0;max-width:34ch}
+.hero .ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+.hero .proof{margin:18px 0 0;font-size:.9rem;color:var(--muted)}
+.hero .proof a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--hair)}
+.hero .proof a:first-child{color:var(--ink);font-weight:600}
+.hero-photo{margin-top:36px;aspect-ratio:16/10;max-width:100%}
+@media (max-width:640px){.hero-photo{aspect-ratio:4/5}}
+/* Facts */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hair);border-radius:var(--r-md);overflow:hidden;margin-top:20px}
+.facts div{background:var(--bg);padding:22px 20px;text-align:center}
+.facts .fic{overflow:visible!important;display:block;width:36px;height:36px;margin:0 auto 12px;transition:transform .35s cubic-bezier(.3,1.5,.4,1)}
+.facts div:hover .fic{transform:rotate(-8deg) scale(1.12)}
+.facts .anim-tile{cursor:pointer}
+.facts div.anim-tile:hover .fic{transform:scale(1.12)}
+.tort{transform-origin:50% 50%}
+.anim-tile:hover .tort,.anim-tile.play .tort{animation:roll 1.5s cubic-bezier(.45,0,.3,1)}
+@keyframes roll{0%{transform:translateX(0) rotate(0)}35%{transform:translateX(26px) rotate(165deg)}75%{transform:translateX(-18px) rotate(-115deg)}100%{transform:translateX(0) rotate(0)}}
+.pep .p1,.pep .p2{transform-box:fill-box;transform-origin:50% 100%}
+.anim-tile:hover .pep .p1,.anim-tile.play .pep .p1{animation:dance1 .5s ease-in-out 3}
+.anim-tile:hover .pep .p2,.anim-tile.play .pep .p2{animation:dance2 .5s ease-in-out 3}
+@keyframes dance1{0%,100%{transform:rotate(0) translateY(0)}25%{transform:rotate(-16deg) translateY(-4px)}50%{transform:rotate(0) translateY(0)}75%{transform:rotate(14deg) translateY(-2px)}}
+@keyframes dance2{0%,100%{transform:rotate(0) translateY(0)}25%{transform:rotate(16deg) translateY(-2px)}50%{transform:rotate(0) translateY(-5px)}75%{transform:rotate(-14deg) translateY(0)}}
+.flag .fbody{transform-box:view-box;transform-origin:5px 16px}
+.anim-tile:hover .flag .fbody,.anim-tile.play .flag .fbody{animation:wave .7s ease-in-out 3}
+@keyframes wave{0%,100%{transform:skewY(0) scaleX(1)}25%{transform:skewY(7deg) scaleX(.94) scaleY(.97)}50%{transform:skewY(0) scaleX(.9)}75%{transform:skewY(-7deg) scaleX(.94) scaleY(.97)}}
+.facts .egg-tile{cursor:pointer}
+.facts .egg-tile:hover .fic.egg,.facts .egg-tile.cracked .fic.egg{transform:scale(1.15)}
+.egg .egg-left,.egg .egg-right,.egg .egg-yolk,.egg .egg-spill{transform-box:view-box}
+.egg .egg-left{transform-origin:6px 22px;transition:transform .5s cubic-bezier(.3,1.5,.4,1)}
+.egg .egg-right{transform-origin:26px 22px;transition:transform .5s cubic-bezier(.3,1.5,.4,1)}
+.egg .egg-spill{transform-origin:17px 24px;transform:scale(.15,.3);opacity:0;transition:transform .6s cubic-bezier(.2,.9,.3,1) .1s,opacity .15s ease .1s}
+.egg .egg-yolk{transform:translateY(-9px) scale(.6);opacity:0;transition:transform .55s cubic-bezier(.3,1.7,.4,1) .12s,opacity .1s ease .12s}
+.egg-tile:hover .egg-left,.egg-tile.cracked .egg-left{transform:translate(-5px,-3px) rotate(-32deg)}
+.egg-tile:hover .egg-right,.egg-tile.cracked .egg-right{transform:translate(5px,-3px) rotate(30deg)}
+.egg-tile:hover .egg-spill,.egg-tile.cracked .egg-spill{transform:none;opacity:1}
+.egg-tile:hover .egg-yolk,.egg-tile.cracked .egg-yolk{transform:none;opacity:1}
+.facts b{display:block;font-size:1.05rem}
+.facts span{color:var(--muted);font-size:.9rem}
+@media (max-width:760px){.facts{grid-template-columns:repeat(2,1fr)}}
+section.s{padding-block:96px}
+.head{text-align:center;margin-bottom:44px}
+.head .eb{color:var(--muted);font-weight:600;font-size:.95rem}
+.head h2{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:700;line-height:1.06;margin-top:6px}
+.head p.lead{color:var(--muted);font-size:1.15rem;max-width:44ch;margin:14px auto 0}
+/* Bento */
+.bento{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:minmax(220px,auto);gap:16px}
+.bento .tile{grid-column:span 2;aspect-ratio:auto;min-height:260px}
+.bento .tile.wide{grid-column:span 4}
+.bento .tile.tall{grid-row:span 2}
+.bento .cap{position:relative;z-index:1;padding:22px;width:100%;background:linear-gradient(transparent,color-mix(in srgb,#000 55%,transparent));color:#fff;border-radius:0 0 var(--r-lg) var(--r-lg)}
+.bento .cap b{font-size:1.15rem;display:block}
+.bento .cap span{font-size:.92rem;opacity:.85}
+@media (max-width:820px){.bento{grid-template-columns:1fr 1fr}.bento .tile,.bento .tile.wide{grid-column:span 2}.bento .tile.tall{grid-row:auto}}
+/* Menu */
+.seg{display:flex;justify-content:center;margin-bottom:36px}
+.seg .track{display:inline-flex;background:var(--surface);border-radius:999px;padding:4px;position:relative;max-width:100%;overflow-x:auto;scrollbar-width:none}
+.seg .track::-webkit-scrollbar{display:none}
+.seg .thumb{position:absolute;top:4px;bottom:4px;left:4px;border-radius:999px;background:var(--card);box-shadow:0 2px 8px rgba(0,0,0,.08);transition:left .35s cubic-bezier(.3,.7,.2,1),width .35s cubic-bezier(.3,.7,.2,1)}
+.seg button{position:relative;z-index:1;border:0;background:none;padding:9px 18px;border-radius:999px;font-size:.92rem;font-weight:600;color:var(--muted);cursor:pointer;white-space:nowrap}
+.seg button[aria-selected="true"]{color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.grid{grid-template-columns:1fr}}
+.item{background:var(--card);border:1px solid var(--hair);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;transition:transform .3s ease,box-shadow .3s ease,opacity .3s ease}
+.item:hover{transform:translateY(-4px);box-shadow:0 18px 40px -18px rgba(0,0,0,.22)}
+.item .photo{border-radius:0;aspect-ratio:4/3}
+.item.nophoto .body{padding-top:22px}
+.grid.compact{grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.grid.compact .item{border-radius:16px}
+.grid.compact .item .body{padding:14px 18px;gap:2px}
+.grid.compact .item h3{font-size:1rem}
+.item .ttl{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.grid.compact .item p{font-size:.86rem}
+.item.nophoto{background:var(--card)}
+.photo img{transition:opacity .4s ease}
+.item:hover .photo img{transform:scale(1.04)}
+.item .photo img{transition:transform .6s cubic-bezier(.3,.7,.2,1)}
+.item .body{padding:18px 20px 20px;display:grid;gap:6px;min-width:0}
+.item h3{font-size:1.12rem;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.item p{color:var(--muted);font-size:.93rem}
+.badge{font-size:.68rem;font-weight:700;letter-spacing:.04em;background:var(--sun-soft);color:var(--ink);padding:3px 9px;border-radius:999px}
+.item.enter{animation:rise .45s cubic-bezier(.3,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}}
+.menu-foot{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:34px}
+/* Peek inside */
+.peek{display:grid;grid-template-columns:minmax(0,380px) auto;justify-content:center;gap:72px;align-items:center}
+@media (max-width:860px){.peek{grid-template-columns:minmax(0,1fr);justify-content:stretch;gap:24px}.peek-side{order:2;min-width:0}}
+.peek-tabs{display:flex;flex-direction:column;gap:6px}
+@media (max-width:860px){.peek-tabs{flex-direction:row;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}.peek-tabs::-webkit-scrollbar{display:none}}
+.peek-tab{border:0;background:none;text-align:left;font-size:clamp(1.3rem,2.6vw,1.9rem);font-weight:700;letter-spacing:-.025em;color:var(--muted);cursor:pointer;padding:6px 0;white-space:nowrap;transition:color .2s}
+@media (max-width:860px){.peek-tab{font-size:1rem;background:var(--card);border:1px solid var(--hair);border-radius:999px;padding:9px 16px}.peek-tab[aria-selected="true"]{background:var(--ink);color:var(--bg)!important}}
+.peek-tab:hover{color:var(--ink)}
+.peek-tab[aria-selected="true"]{color:var(--ink)}
+.peek-desc{color:var(--muted);margin-top:18px;max-width:36ch;min-height:3em}
+.peek-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.peek-stage{display:flex;justify-content:center;min-width:0}
+.peek-frame{position:relative;width:calc(560px * var(--ar,.75));max-width:100%;aspect-ratio:var(--ar,.75);border-radius:var(--r-lg);overflow:visible}
+.peek-frame>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:var(--r-lg);box-shadow:0 30px 60px -30px rgba(0,0,0,.45);animation:pkimg .5s ease both}
+@keyframes pkimg{from{opacity:0;transform:scale(.97)}}
+.pin{position:absolute;transform:translate(-50%,-50%);z-index:1}
+.pin .dot{display:block;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--sun);box-shadow:0 2px 8px rgba(0,0,0,.35);animation:pop .4s cubic-bezier(.3,1.6,.4,1) both;animation-delay:var(--d)}
+.pin .dot::after{content:"";position:absolute;inset:-3px;border-radius:50%;border:2px solid #fff;animation:ripple 2.2s ease-out infinite;animation-delay:var(--d)}
+.pin .lab{position:absolute;top:50%;left:22px;transform:translateY(-50%);background:rgba(255,255,255,.94);color:#1d1d1f;font-weight:700;font-size:.84rem;padding:6px 12px;border-radius:999px;white-space:nowrap;box-shadow:0 6px 18px rgba(0,0,0,.22);animation:slab .45s cubic-bezier(.3,1.4,.4,1) both;animation-delay:calc(var(--d) + .08s)}
+.pin.l .lab{left:auto;right:22px;animation-name:slabl}
+@keyframes pop{from{transform:scale(0)}}
+@keyframes ripple{0%{transform:scale(1);opacity:.9}80%,100%{transform:scale(2.4);opacity:0}}
+@keyframes slab{from{opacity:0;transform:translate(-8px,-50%) scale(.9)}}
+@keyframes slabl{from{opacity:0;transform:translate(8px,-50%) scale(.9)}}
+.peek-frame.clean .pin{opacity:0;pointer-events:none;transition:opacity .25s}
+@media (max-width:520px){.pin .lab{font-size:.74rem;padding:4px 9px;left:16px}.pin.l .lab{right:16px}.pin .dot{width:11px;height:11px}}
+/* FAQ */
+.faq{max-width:760px;margin:0 auto;display:grid;gap:10px}
+.faq-item{background:var(--card);border:1px solid var(--hair);border-radius:18px;padding:0 22px}
+.faq-item summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary h3{font-size:1.05rem;font-weight:700;margin:0}
+.faq-item summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--muted);transition:transform .25s ease;flex:none}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item p{color:var(--muted);padding:0 0 20px;max-width:60ch}
+/* Spinner */
+.spin{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:760px){.spin{grid-template-columns:1fr}}
+.spin .card{background:var(--surface);border-radius:var(--r-lg);padding:40px 32px;display:grid;gap:16px;align-content:center;min-height:300px;text-align:center;justify-items:center}
+.reel{height:3.4rem;overflow:hidden;width:100%;position:relative}
+.reel ul{list-style:none;margin:0;padding:0}
+.reel li{height:3.4rem;display:grid;place-items:center;font-size:clamp(1.25rem,4.6vw,1.9rem);font-weight:700;letter-spacing:-.01em;word-spacing:.12em;white-space:nowrap;padding:0 8px;margin:0;list-style:none}
+.reel-desc{color:var(--muted);min-height:3em;max-width:32ch}
+.art{width:150px;height:120px;display:grid;place-items:center}
+.art>svg{width:100%;height:100%;overflow:visible}
+.art.idle>svg,.art:not(.drawn)>svg{width:70px;height:70px}
+.art.spinning>svg{animation:spin .6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.art.drawn>svg{animation:artpop .6s cubic-bezier(.3,1.7,.4,1) both,artbob 2.4s ease-in-out .6s infinite}
+@keyframes artpop{from{transform:scale(.2) rotate(-20deg);opacity:0}}
+@keyframes artbob{50%{transform:translateY(-4px) rotate(-2deg)}}
+.spin .photo{min-height:300px}
+/* Order */
+.clover{background:var(--card);border:1px solid var(--hair);border-radius:var(--r-lg);display:grid;place-items:center;text-align:center;padding:56px 24px}
+.clover .in{max-width:40ch;display:grid;gap:12px;justify-items:center}
+.clover .ic{width:64px;height:64px;border-radius:18px;background:var(--surface);display:grid;place-items:center}
+.clover h3{font-size:1.4rem}
+.clover p{color:var(--muted)}
+.clover .pill{margin-top:8px}
+.clover-note{font-size:.82rem}
+#lb-site .clover-note a,#lb-site .faq-item p a{color:var(--sun)!important;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+/* Visit */
+.visit{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.visit .vphoto{min-height:380px}
+@media (max-width:960px){.visit{grid-template-columns:1fr 1fr}.visit .vphoto{grid-column:1/-1;aspect-ratio:4/3;min-height:0}}
+@media (max-width:640px){.visit{grid-template-columns:1fr}}
+.panel{background:var(--surface);border-radius:var(--r-lg);padding:34px 32px;min-width:0}
+.panel h3{font-size:1.6rem;line-height:1.2}
+.panel .muted{color:var(--muted);margin-top:10px}
+.panel .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.phone{margin-top:26px;font-size:1.2rem;font-weight:600;user-select:all;font-variant-numeric:tabular-nums}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:6px}
+.hours td{padding:12px 0;border-bottom:1px solid var(--hair)}
+.hours tr:last-child td{border-bottom:0}
+.hours td:last-child{text-align:right;color:var(--muted)}
+.hours tr.today td{font-weight:700;color:var(--ink)}
+.hours tr.today td:first-child::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--sun);margin-right:10px;vertical-align:1px}
+footer{border-top:1px solid var(--hair);padding-block:28px 40px;font-size:.82rem;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;align-items:center}
+footer nav{display:flex;gap:20px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--ink)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.menu-jump{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:26px}
+.menu-hours{margin:18px auto 0;color:var(--muted);font-size:.95rem}
+.menu-note{color:var(--muted);text-align:center;max-width:52ch;margin:28px auto 0;font-size:.95rem}
+.menu-note a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--sun);text-underline-offset:3px}
+@media (max-width:640px){.nav-links a.hide-sm[href="/#peek"]{display:none}}
+</style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<filter id="brushInk" x="-5%" y="-10%" width="110%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".04 .9" numOctaves="2" seed="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" xChannelSelector="R" yChannelSelector="G" result="d"/><feTurbulence type="fractalNoise" baseFrequency=".03 .4" numOctaves="3" seed="8" result="n2"/><feColorMatrix in="n2" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -12 0 0 0 8.6" result="m"/><feComposite in="d" in2="m" operator="in"/></filter>
+<symbol id="sun" viewBox="0 0 48 48"><path d="M26.6 11.0L24.0 2.0L21.4 11.0ZM35.0 16.6L39.6 8.4L31.4 13.0ZM37.0 26.6L46.0 24.0L37.0 21.4ZM31.4 35.0L39.6 39.6L35.0 31.4ZM21.4 37.0L24.0 46.0L26.6 37.0ZM13.0 31.4L8.4 39.6L16.6 35.0ZM11.0 21.4L2.0 24.0L11.0 26.6ZM16.6 13.0L8.4 8.4L13.0 16.6Z" fill="var(--sun)"/><polygon points="32.8,27.6 27.6,32.8 20.4,32.8 15.2,27.6 15.2,20.4 20.4,15.2 27.6,15.2 32.8,20.4" fill="var(--sun)"/></symbol>
+<symbol id="cam" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+</defs>
+</svg>
+<header class="nav">
+<div class="wrap">
+<a class="logo" href="/" aria-label="La Bonita Brunch home"><img class="lg-l" src="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01955cd49b2705b07c159/1794120021687/lb-logo-dark-ink.png" alt="La Bonita Brunch" width="138" height="40"><img class="lg-d" src="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01955d5d60d59e0f22dc0/1794120021840/lb-logo-light-ink.png" alt="La Bonita Brunch" width="138" height="40"></a>
+<nav class="nav-links" aria-label="Main">
+<a class="hide-sm" href="/menu" aria-current="page">Menu</a>
+<a class="hide-sm" href="/#peek">Peek inside</a>
+<a class="hide-sm" href="/#visit">Visit</a>
+<a class="hide-sm" href="/blog">Blog</a>
+<a class="pill sun sm" href="https://la-bonita-brunch-redmond.cloveronline.com/menu/all" target="_blank" rel="noopener">Order</a>
+</nav>
+</div>
+</header>
+<main id="top">
+<section class="hero">
+<div class="wrap">
+<p class="kicker">Mexican breakfast &amp; brunch food truck · Redmond, Oregon</p>
+<h1>Our menu</h1>
+<p class="sub">Breakfast burritos, tacos, flautas and Mexican sweets, made to order at 958 NW 6th St in Redmond.</p>
+<div class="ctas">
+<a class="pill primary" href="https://la-bonita-brunch-redmond.cloveronline.com/menu/all" target="_blank" rel="noopener">Order for pickup</a>
+<a class="pill quiet" href="https://www.doordash.com/store/la-bonita-brunch-redmond-35873245/" target="_blank" rel="noopener">Get delivery</a>
+</div>
+<p class="menu-hours">Monday–Friday 7am–2:30pm · Saturday 7am–2pm · Closed Sunday</p>
+<nav class="menu-jump" aria-label="Menu sections">
+<a class="pill quiet sm" href="#breakfast">Breakfast</a>
+<a class="pill quiet sm" href="#burritos">Burritos</a>
+<a class="pill quiet sm" href="#tacos-flautas">Tacos &amp; Flautas</a>
+<a class="pill quiet sm" href="#sweets">Sweets</a>
+<a class="pill quiet sm" href="#drinks-sides">Drinks &amp; Sides</a>
+</nav>
+</div>
+</section>
+<section class="s" id="breakfast" style="background:var(--surface)">
+<div class="wrap">
+<div class="head">
+<h2>Breakfast</h2>
+<p class="lead">Every egg is cracked fresh when you order, and any burrito can be made as a bowl.</p>
+</div>
+<div class="grid">
+<article class="item nophoto"><div class="body"><div class="ttl"><h3>Ranchero Burrito</h3><span class="badge">Fan favorite</span></div><p>Runny eggs, beans, cheese, green salsa and sour cream.</p></div></article>
+<article class="item"><div class="photo"><img src="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af018883c4eef11115475a1/1794119816774/lb-breakfast-burrito.jpg?format=750w" srcset="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af018883c4eef11115475a1/1794119816774/lb-breakfast-burrito.jpg?format=500w 500w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af018883c4eef11115475a1/1794119816774/lb-breakfast-burrito.jpg?format=750w 750w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af018883c4eef11115475a1/1794119816774/lb-breakfast-burrito.jpg?format=1000w 1000w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af018883c4eef11115475a1/1794119816774/lb-breakfast-burrito.jpg?format=1500w 1500w" sizes="(max-width:640px) 92vw, (max-width:960px) 45vw, 340px" alt="Bacon breakfast burrito cut in half, with a Jarritos, a Mexican Coke and a cup of café de olla" loading="lazy"></div><div class="body"><div class="ttl"><h3>Breakfast Burrito</h3><span class="badge">Fan favorite</span></div><p>Your choice of meat, like bacon, with eggs, potato and cheese. Pair it with an ice-cold drink, café de olla and a dessert.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Breakfast Asada Burrito</h3><p>Carne asada, eggs, cheese and potato in a flour tortilla.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Nopal Burrito</h3><p>Eggs, beans, cheese and nopales.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Miles&#x27; Burrito</h3><p>Eggs, beans and cheese.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Mia&#x27;s Burrito</h3><p>Egg, potato and cheese.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Chicken Breakfast</h3><p>A chicken plate with eggs, cheese and potato.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Breakfast Tacos (3)</h3><p>Three corn tortillas filled with your choice of protein, eggs, cheese and potatoes.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Asada Breakfast Taco</h3><p>Carne asada, guacamole, onion and cilantro on a corn tortilla.</p></div></article>
+</div>
+</div>
+</section>
+<section class="s" id="burritos">
+<div class="wrap">
+<div class="head">
+<h2>Burritos</h2>
+<p class="lead">Big lunch burritos, wrapped hot off the griddle. Try them with our house green and habanero salsas.</p>
+</div>
+<div class="grid">
+<article class="item"><div class="photo"><img src="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01888d5d60d59e0f21f83/1794119816808/lb-broadway-burrito.jpg?format=750w" srcset="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01888d5d60d59e0f21f83/1794119816808/lb-broadway-burrito.jpg?format=500w 500w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01888d5d60d59e0f21f83/1794119816808/lb-broadway-burrito.jpg?format=750w 750w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01888d5d60d59e0f21f83/1794119816808/lb-broadway-burrito.jpg?format=1000w 1000w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01888d5d60d59e0f21f83/1794119816808/lb-broadway-burrito.jpg?format=1500w 1500w" sizes="(max-width:640px) 92vw, (max-width:960px) 45vw, 340px" alt="Broadway Burrito opened up, piled with carne asada, french fries, shredded cheese and guacamole" loading="lazy"></div><div class="body"><div class="ttl"><h3>Broadway Burrito</h3><span class="badge">Big one</span></div><p>Carne asada, cheese, french fries, guacamole and sour cream.</p></div></article>
+<article class="item"><div class="photo"><img src="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01894a159305d9abca0c4/1794119828344/lb-chicken-burrito.jpg?format=750w" srcset="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01894a159305d9abca0c4/1794119828344/lb-chicken-burrito.jpg?format=500w 500w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01894a159305d9abca0c4/1794119828344/lb-chicken-burrito.jpg?format=750w 750w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01894a159305d9abca0c4/1794119828344/lb-chicken-burrito.jpg?format=1000w 1000w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01894a159305d9abca0c4/1794119828344/lb-chicken-burrito.jpg?format=1500w 1500w" sizes="(max-width:640px) 92vw, (max-width:960px) 45vw, 340px" alt="Chicken Burrito cut in half showing chicken, beans, cheese, lettuce and tomato" loading="lazy"></div><div class="body"><h3>Chicken Burrito</h3><p>Chicken, beans, cheese, tomato, onion, cilantro, lettuce and sour cream.</p></div></article>
+<article class="item"><div class="photo"><img src="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01955f1031b7f419c70fa/1794120021802/lb-fish-burrito.jpg?format=750w" srcset="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01955f1031b7f419c70fa/1794120021802/lb-fish-burrito.jpg?format=500w 500w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01955f1031b7f419c70fa/1794120021802/lb-fish-burrito.jpg?format=750w 750w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01955f1031b7f419c70fa/1794120021802/lb-fish-burrito.jpg?format=1000w 1000w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01955f1031b7f419c70fa/1794120021802/lb-fish-burrito.jpg?format=1500w 1500w" sizes="(max-width:640px) 92vw, (max-width:960px) 45vw, 340px" alt="Fish Burrito cut in half with cabbage and sauce, served with two house salsas" loading="lazy"></div><div class="body"><h3>Fish Burrito</h3><p>Battered fish, cabbage, pico and special sauce.</p></div></article>
+<article class="item"><div class="photo"><img src="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af0188845bf93783140ac3e/1794119816809/lb-asada-burrito.jpg?format=750w" srcset="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af0188845bf93783140ac3e/1794119816809/lb-asada-burrito.jpg?format=500w 500w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af0188845bf93783140ac3e/1794119816809/lb-asada-burrito.jpg?format=750w 750w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af0188845bf93783140ac3e/1794119816809/lb-asada-burrito.jpg?format=1000w 1000w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af0188845bf93783140ac3e/1794119816809/lb-asada-burrito.jpg?format=1500w 1500w" sizes="(max-width:640px) 92vw, (max-width:960px) 45vw, 340px" alt="Asada Burrito cut in half with carne asada, guacamole and tomato, next to green and habanero salsa" loading="lazy"></div><div class="body"><h3>Asada Burrito</h3><p>Carne asada, beans, cheese, tomato, onion, cilantro and guacamole. Try it with our green and habanero salsas.</p></div></article>
+<article class="item"><div class="photo"><img src="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fbd94eb12ad9b4b9c0/1794120187925/lb-shrimp-bowl.jpg?format=750w" srcset="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fbd94eb12ad9b4b9c0/1794120187925/lb-shrimp-bowl.jpg?format=500w 500w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fbd94eb12ad9b4b9c0/1794120187925/lb-shrimp-bowl.jpg?format=750w 750w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fbd94eb12ad9b4b9c0/1794120187925/lb-shrimp-bowl.jpg?format=1000w 1000w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fbd94eb12ad9b4b9c0/1794120187925/lb-shrimp-bowl.jpg?format=1500w 1500w" sizes="(max-width:640px) 92vw, (max-width:960px) 45vw, 340px" alt="Two shrimp bowls with pico, cilantro and sauce, served with lime and house salsas" loading="lazy"></div><div class="body"><div class="ttl"><h3>Shrimp Burrito</h3><span class="badge">Try it as a bowl</span></div><p>Grilled shrimp, cabbage, pico and special sauce. Shown here as a bowl, no tortilla.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Chile Relleno Burrito</h3><p>Battered roasted pepper filled with cheese, with beans and sour cream.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Bean &amp; Cheese Burrito</h3><p>Beans and cheese. Simple and perfect.</p></div></article>
+</div>
+</div>
+</section>
+<section class="s" id="tacos-flautas" style="background:var(--surface)">
+<div class="wrap">
+<div class="head">
+<h2>Tacos &amp; Flautas</h2>
+<p class="lead">Crispy potato tacos, street tacos and rolled flautas.</p>
+</div>
+<div class="grid">
+<article class="item"><div class="photo"><img src="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fb22eb862b4a00757f/1794120187932/lb-days-tacos.jpg?format=750w" srcset="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fb22eb862b4a00757f/1794120187932/lb-days-tacos.jpg?format=500w 500w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fb22eb862b4a00757f/1794120187932/lb-days-tacos.jpg?format=750w 750w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fb22eb862b4a00757f/1794120187932/lb-days-tacos.jpg?format=1000w 1000w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fb22eb862b4a00757f/1794120187932/lb-days-tacos.jpg?format=1500w 1500w" sizes="(max-width:640px) 92vw, (max-width:960px) 45vw, 340px" alt="Day&#x27;s Tacos: crispy potato tacos topped with lettuce, tomato, sour cream and cheese" loading="lazy"></div><div class="body"><div class="ttl"><h3>Day&#x27;s Tacos (4)</h3><span class="badge">Fan favorite</span></div><p>Four crispy potato tacos topped with lettuce, cheese, tomato and sour cream.</p></div></article>
+<article class="item"><div class="photo"><img src="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fbfbbfca2f77339627/1794120187893/lb-flautas.jpg?format=750w" srcset="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fbfbbfca2f77339627/1794120187893/lb-flautas.jpg?format=500w 500w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fbfbbfca2f77339627/1794120187893/lb-flautas.jpg?format=750w 750w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fbfbbfca2f77339627/1794120187893/lb-flautas.jpg?format=1000w 1000w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fbfbbfca2f77339627/1794120187893/lb-flautas.jpg?format=1500w 1500w" sizes="(max-width:640px) 92vw, (max-width:960px) 45vw, 340px" alt="Las Flautas, rolled taquitos topped with guacamole, lettuce, sour cream and cheese" loading="lazy"></div><div class="body"><h3>Las Flautas</h3><p>Rolled taquitos with your choice of beef or chicken, topped with sour cream, guacamole, cheese and lettuce.</p></div></article>
+<article class="item"><div class="photo"><img src="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01888e698f9751ca5b8c9/1794119816812/lb-asada-taco.jpg?format=750w" srcset="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01888e698f9751ca5b8c9/1794119816812/lb-asada-taco.jpg?format=500w 500w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01888e698f9751ca5b8c9/1794119816812/lb-asada-taco.jpg?format=750w 750w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01888e698f9751ca5b8c9/1794119816812/lb-asada-taco.jpg?format=1000w 1000w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01888e698f9751ca5b8c9/1794119816812/lb-asada-taco.jpg?format=1500w 1500w" sizes="(max-width:640px) 92vw, (max-width:960px) 45vw, 340px" alt="Asada Taco on a corn tortilla with carne asada, onion, cilantro and guacamole" loading="lazy"></div><div class="body"><h3>Asada Taco</h3><p>Carne asada, onion, cilantro and guacamole on a corn tortilla.</p></div></article>
+<article class="item"><div class="photo"><img src="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fbd94eb12ad9b4b9bf/1794120187903/lb-shrimp-taco.jpg?format=750w" srcset="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fbd94eb12ad9b4b9bf/1794120187903/lb-shrimp-taco.jpg?format=500w 500w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fbd94eb12ad9b4b9bf/1794120187903/lb-shrimp-taco.jpg?format=750w 750w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fbd94eb12ad9b4b9bf/1794120187903/lb-shrimp-taco.jpg?format=1000w 1000w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fbd94eb12ad9b4b9bf/1794120187903/lb-shrimp-taco.jpg?format=1500w 1500w" sizes="(max-width:640px) 92vw, (max-width:960px) 45vw, 340px" alt="Shrimp Taco topped with cabbage, tomato, cilantro and special shrimp sauce" loading="lazy"></div><div class="body"><h3>Shrimp Taco</h3><p>Grilled shrimp, cabbage, pico and special sauce.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Chicken Taco</h3><p>Chicken, onion, cilantro and lettuce.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Fish Taco</h3><p>Battered fish, cabbage, pico and special sauce.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Taco Chile Relleno (2)</h3><p>Two corn tortillas with chile relleno, cheese, beans and sour cream.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Bean N Cheese Taco</h3><p>Beans and cheese in a flour tortilla.</p></div></article>
+</div>
+</div>
+</section>
+<section class="s" id="sweets">
+<div class="wrap">
+<div class="head">
+<h2>Sweets</h2>
+<p class="lead">Mexican desserts to finish, or to start.</p>
+</div>
+<div class="grid">
+<article class="item"><div class="photo"><img src="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01962f1031b7f419c7131/1794120034276/lb-churro-bites.jpg?format=750w" srcset="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01962f1031b7f419c7131/1794120034276/lb-churro-bites.jpg?format=500w 500w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01962f1031b7f419c7131/1794120034276/lb-churro-bites.jpg?format=750w 750w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01962f1031b7f419c7131/1794120034276/lb-churro-bites.jpg?format=1000w 1000w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01962f1031b7f419c7131/1794120034276/lb-churro-bites.jpg?format=1500w 1500w" sizes="(max-width:640px) 92vw, (max-width:960px) 45vw, 340px" alt="Churro bites coated in cinnamon sugar and drizzled with cajeta" loading="lazy"></div><div class="body"><h3>Churro Bites (8)</h3><p>Eight churro bites with cinnamon sugar and cajeta, Mexican caramel.</p></div></article>
+<article class="item"><div class="photo"><img src="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af018889e07d1569ce11a80/1794119816749/lb-carlota.jpg?format=750w" srcset="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af018889e07d1569ce11a80/1794119816749/lb-carlota.jpg?format=500w 500w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af018889e07d1569ce11a80/1794119816749/lb-carlota.jpg?format=750w 750w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af018889e07d1569ce11a80/1794119816749/lb-carlota.jpg?format=1000w 1000w, https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af018889e07d1569ce11a80/1794119816749/lb-carlota.jpg?format=1500w 1500w" sizes="(max-width:640px) 92vw, (max-width:960px) 45vw, 340px" alt="Carlota, a no-bake Mexican icebox cake, topped with cajeta caramel" loading="lazy"></div><div class="body"><h3>Carlota</h3><p>A no-bake Mexican icebox cake: creamy layers of lemon cookies topped with cajeta caramel.</p></div></article>
+</div>
+</div>
+</section>
+<section class="s" id="drinks-sides" style="background:var(--surface)">
+<div class="wrap">
+<div class="head">
+<h2>Drinks &amp; Sides</h2>
+<p class="lead">Mexican spiced coffee, glass-bottle sodas and house-made sides.</p>
+</div>
+<div class="grid compact">
+<article class="item nophoto"><div class="body"><h3>Café de Olla</h3><p>Mexican spiced coffee, freshly brewed. Free for veterans.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Mexican Coca-Cola</h3><p>Made with pure cane sugar, in the glass bottle.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Jarritos</h3><p>Pineapple, lime, mandarin, fruit punch or tamarind.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Red Bull</h3><p>Ice cold.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Juice</h3><p>Orange or apple.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Ice Tea</h3><p>Sugar-free green iced tea.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Bottled Water</h3><p>16.9 oz Aquafina.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Guacamole</h3><p>Made fresh every day.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Green Salsa</h3><p>Our house green salsa.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Habanero Salsa</h3><p>Our house habanero salsa.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Crema</h3><p>Side of sour cream.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Beans</h3><p>Side of beans.</p></div></article>
+<article class="item nophoto"><div class="body"><h3>Fries</h3><p>Side of fries.</p></div></article>
+</div>
+</div>
+</section>
+<section class="s" id="order-cta">
+<div class="wrap">
+<div class="head">
+<h2>Ready to order?</h2>
+<p class="lead">Current prices are on our online ordering page. Online orders are taken until 2:00 pm on weekdays and 1:30 pm on Saturday.</p>
+</div>
+<div class="ctas" style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+<a class="pill primary" href="https://la-bonita-brunch-redmond.cloveronline.com/menu/all" target="_blank" rel="noopener">Order for pickup</a>
+<a class="pill quiet" href="https://www.doordash.com/store/la-bonita-brunch-redmond-35873245/" target="_blank" rel="noopener">Get delivery</a>
+<a class="pill quiet" href="tel:+15416784991">Call (541) 678-4991</a>
+</div>
+<p class="menu-note">New here? Read <a href="/blog/first-time-what-to-order">what to order on your first visit</a>, or see <a href="/#visit">where to find the truck</a>.</p>
+</div>
+</section>
+</main>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://labonitabrunch.net/menu#webpage","url":"https://labonitabrunch.net/menu","name":"Menu | La Bonita Brunch, Breakfast Burritos in Redmond, OR","isPartOf":{"@id":"https://labonitabrunch.net/#website"},"about":{"@id":"https://labonitabrunch.net/#restaurant"},"mainEntity":{"@id":"https://labonitabrunch.net/menu#menu"},"inLanguage":"en-US"},{"@type":"Menu","name":"La Bonita Brunch Menu","url":"https://labonitabrunch.net/menu","hasMenuSection":[{"@type":"MenuSection","name":"Breakfast","hasMenuItem":[{"@type":"MenuItem","name":"Ranchero Burrito","description":"Runny eggs, beans, cheese, green salsa and sour cream."},{"@type":"MenuItem","name":"Breakfast Burrito","description":"Your choice of meat, like bacon, with eggs, potato and cheese. Pair it with an ice-cold drink, café de olla and a dessert.","image":"https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af018883c4eef11115475a1/1794119816774/lb-breakfast-burrito.jpg"},{"@type":"MenuItem","name":"Breakfast Asada Burrito","description":"Carne asada, eggs, cheese and potato in a flour tortilla."},{"@type":"MenuItem","name":"Nopal Burrito","description":"Eggs, beans, cheese and nopales."},{"@type":"MenuItem","name":"Miles' Burrito","description":"Eggs, beans and cheese."},{"@type":"MenuItem","name":"Mia's Burrito","description":"Egg, potato and cheese."},{"@type":"MenuItem","name":"Chicken Breakfast","description":"A chicken plate with eggs, cheese and potato."},{"@type":"MenuItem","name":"Breakfast Tacos (3)","description":"Three corn tortillas filled with your choice of protein, eggs, cheese and potatoes."},{"@type":"MenuItem","name":"Asada Breakfast Taco","description":"Carne asada, guacamole, onion and cilantro on a corn tortilla."}]},{"@type":"MenuSection","name":"Burritos","hasMenuItem":[{"@type":"MenuItem","name":"Broadway Burrito","description":"Carne asada, cheese, french fries, guacamole and sour cream.","image":"https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01888d5d60d59e0f21f83/1794119816808/lb-broadway-burrito.jpg"},{"@type":"MenuItem","name":"Chicken Burrito","description":"Chicken, beans, cheese, tomato, onion, cilantro, lettuce and sour cream.","image":"https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01894a159305d9abca0c4/1794119828344/lb-chicken-burrito.jpg"},{"@type":"MenuItem","name":"Fish Burrito","description":"Battered fish, cabbage, pico and special sauce.","image":"https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01955f1031b7f419c70fa/1794120021802/lb-fish-burrito.jpg"},{"@type":"MenuItem","name":"Asada Burrito","description":"Carne asada, beans, cheese, tomato, onion, cilantro and guacamole. Try it with our green and habanero salsas.","image":"https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af0188845bf93783140ac3e/1794119816809/lb-asada-burrito.jpg"},{"@type":"MenuItem","name":"Shrimp Burrito","description":"Grilled shrimp, cabbage, pico and special sauce. Shown here as a bowl, no tortilla.","image":"https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fbd94eb12ad9b4b9c0/1794120187925/lb-shrimp-bowl.jpg"},{"@type":"MenuItem","name":"Chile Relleno Burrito","description":"Battered roasted pepper filled with cheese, with beans and sour cream."},{"@type":"MenuItem","name":"Bean & Cheese Burrito","description":"Beans and cheese. Simple and perfect."}]},{"@type":"MenuSection","name":"Tacos & Flautas","hasMenuItem":[{"@type":"MenuItem","name":"Day's Tacos (4)","description":"Four crispy potato tacos topped with lettuce, cheese, tomato and sour cream.","image":"https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fb22eb862b4a00757f/1794120187932/lb-days-tacos.jpg"},{"@type":"MenuItem","name":"Las Flautas","description":"Rolled taquitos with your choice of beef or chicken, topped with sour cream, guacamole, cheese and lettuce.","image":"https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fbfbbfca2f77339627/1794120187893/lb-flautas.jpg"},{"@type":"MenuItem","name":"Asada Taco","description":"Carne asada, onion, cilantro and guacamole on a corn tortilla.","image":"https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01888e698f9751ca5b8c9/1794119816812/lb-asada-taco.jpg"},{"@type":"MenuItem","name":"Shrimp Taco","description":"Grilled shrimp, cabbage, pico and special sauce.","image":"https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af019fbd94eb12ad9b4b9bf/1794120187903/lb-shrimp-taco.jpg"},{"@type":"MenuItem","name":"Chicken Taco","description":"Chicken, onion, cilantro and lettuce."},{"@type":"MenuItem","name":"Fish Taco","description":"Battered fish, cabbage, pico and special sauce."},{"@type":"MenuItem","name":"Taco Chile Relleno (2)","description":"Two corn tortillas with chile relleno, cheese, beans and sour cream."},{"@type":"MenuItem","name":"Bean N Cheese Taco","description":"Beans and cheese in a flour tortilla."}]},{"@type":"MenuSection","name":"Sweets","hasMenuItem":[{"@type":"MenuItem","name":"Churro Bites (8)","description":"Eight churro bites with cinnamon sugar and cajeta, Mexican caramel.","image":"https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01962f1031b7f419c7131/1794120034276/lb-churro-bites.jpg"},{"@type":"MenuItem","name":"Carlota","description":"A no-bake Mexican icebox cake: creamy layers of lemon cookies topped with cajeta caramel.","image":"https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af018889e07d1569ce11a80/1794119816749/lb-carlota.jpg"}]},{"@type":"MenuSection","name":"Drinks & Sides","hasMenuItem":[{"@type":"MenuItem","name":"Café de Olla","description":"Mexican spiced coffee, freshly brewed. Free for veterans."},{"@type":"MenuItem","name":"Mexican Coca-Cola","description":"Made with pure cane sugar, in the glass bottle."},{"@type":"MenuItem","name":"Jarritos","description":"Pineapple, lime, mandarin, fruit punch or tamarind."},{"@type":"MenuItem","name":"Red Bull","description":"Ice cold."},{"@type":"MenuItem","name":"Juice","description":"Orange or apple."},{"@type":"MenuItem","name":"Ice Tea","description":"Sugar-free green iced tea."},{"@type":"MenuItem","name":"Bottled Water","description":"16.9 oz Aquafina."},{"@type":"MenuItem","name":"Guacamole","description":"Made fresh every day."},{"@type":"MenuItem","name":"Green Salsa","description":"Our house green salsa."},{"@type":"MenuItem","name":"Habanero Salsa","description":"Our house habanero salsa."},{"@type":"MenuItem","name":"Crema","description":"Side of sour cream."},{"@type":"MenuItem","name":"Beans","description":"Side of beans."},{"@type":"MenuItem","name":"Fries","description":"Side of fries."}]}],"@id":"https://labonitabrunch.net/menu#menu","description":"Breakfast burritos, burritos, tacos, flautas, Mexican sweets, coffee and drinks from La Bonita Brunch in Redmond, Oregon."},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://labonitabrunch.net/"},{"@type":"ListItem","position":2,"name":"Menu","item":"https://labonitabrunch.net/menu"}]}]}</script>
+<footer>
+<div class="wrap">
+<span class="fbrand"><img class="lg-l" src="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01955cd49b2705b07c159/1794120021687/lb-logo-dark-ink.png" alt="La Bonita Brunch" width="110" height="32"><img class="lg-d" src="https://static1.squarespace.com/static/6a99a8c673bc423a39f07352/t/6af01955d5d60d59e0f22dc0/1794120021840/lb-logo-light-ink.png" alt="La Bonita Brunch" width="110" height="32"><span>Family owned · 958 NW 6th St, Redmond, OR 97756 · <a href="tel:+15416784991">(541) 678-4991</a></span></span>
+<nav>
+<a href="/">Home</a>
+<a href="/blog">Blog</a>
+<a href="https://www.instagram.com/labonita_brunch/" target="_blank" rel="noopener">Instagram</a>
+<a href="https://www.facebook.com/p/La-Bonita-Brunch-61579161419085/" target="_blank" rel="noopener">Facebook</a>
+<a href="https://www.yelp.com/biz/la-bonita-brunch-redmond" target="_blank" rel="noopener">Yelp</a>
+</nav>
+</div>
+</footer>
+</div>
