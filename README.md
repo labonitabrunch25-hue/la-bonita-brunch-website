@@ -1,6 +1,6 @@
 # La Bonita Brunch website
 
-A Markdown mirror of [labonitabrunch.net](https://labonitabrunch.net/), the website for La Bonita Brunch, a family-owned Mexican breakfast and brunch food truck in Redmond, Oregon.
+A Markdown mirror of [labonitabrunch.net](https://labonitabrunch.net/), the website for La Bonita Brunch, a family-owned Mexican breakfast, brunch and lunch food truck in Redmond, Oregon.
 
 This repo is a copy for reference and backup. The live site runs on Squarespace, so changing a file here does not change the website.
 
@@ -15,7 +15,7 @@ This repo is a copy for reference and backup. The live site runs on Squarespace,
 | Page | Live URL | Mirror |
 |---|---|---|
 | Home | https://labonitabrunch.net/ | [pages/home.md](pages/home.md) |
-| Menu | https://labonitabrunch.net/#menu | [pages/menu.md](pages/menu.md) |
+| Menu | https://labonitabrunch.net/menu | [pages/menu.md](pages/menu.md) |
 | FAQ | https://labonitabrunch.net/#faq | [pages/faq.md](pages/faq.md) |
 | Visit | https://labonitabrunch.net/#visit | [pages/visit.md](pages/visit.md) |
 | Blog | https://labonitabrunch.net/blog | [blog/](blog/README.md) |
@@ -25,6 +25,9 @@ This repo is a copy for reference and backup. The live site runs on Squarespace,
 - [First Time at La Bonita Brunch? Here's What to Order](blog/first-time-what-to-order.md)
 - [Real Eggs, Cracked to Order: How We Make Our Breakfast Burritos](blog/real-eggs-cracked-to-order.md)
 - [Café de Olla, Churro Bites and Carlota: Our Mexican Coffee and Sweets](blog/cafe-de-olla-churro-bites-carlota.md)
+- [Breakfast Burritos in Redmond, OR: Every One on Our Menu, by Style](blog/breakfast-burritos-redmond-or.md)
+- [Mexican Lunch in Redmond: Burritos, Tacos and Flautas Until 2:30](blog/mexican-lunch-redmond.md)
+- [Visiting Our Food Truck on NW 6th St in Redmond: What to Know](blog/visiting-our-food-truck-redmond.md)
 
 ## Other files
 
