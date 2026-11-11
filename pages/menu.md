@@ -20,7 +20,7 @@ Breakfast burritos, tacos & more. Every burrito can be made as a bowl. Current p
 - **Mia's Burrito**: Egg, potato and cheese.
 - **Chicken Breakfast**: A chicken plate with eggs, cheese and potato.
 - **Breakfast Tacos (3)**: Three corn tortillas filled with your choice of protein, eggs, cheese and potatoes.
-- **Asada Breakfast Taco**: Carne asada, guacamole, onion and cilantro on a corn tortilla.
+- **Asada Breakfast Tacos (3)**: Three corn tortillas with carne asada, guacamole, onion and cilantro.
 
 ## Burritos
 
