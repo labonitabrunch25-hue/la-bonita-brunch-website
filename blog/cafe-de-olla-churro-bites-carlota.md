@@ -42,3 +42,5 @@ We keep Mexican Coca-Cola made with cane sugar and Jarritos fruit sodas ice cold
 We're at 958 NW 6th St in Redmond, open Monday through Friday 7am to 2:30pm and Saturday 7am to 2pm. Order ahead for pickup, or come say hi at the window. ¡Hablamos español!
 
 [Order ahead for pickup](https://la-bonita-brunch-redmond.cloveronline.com/menu/all) · [See the full menu](https://labonitabrunch.net/#menu)
+
+The graphics on our food truck were installed by [Oregon Detail Co](https://oregondetail.com/). ¡Gracias for making the truck look as good as the food!

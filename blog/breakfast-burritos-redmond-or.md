@@ -29,7 +29,7 @@ Breakfast burritos are why most people find our food truck at 958 NW 6th St. Her
 ## Not in a burrito mood?
 
 - **Breakfast Tacos (3):** three corn tortillas filled with your choice of protein, eggs, cheese and potatoes.
-- **Asada Breakfast Taco:** carne asada, guacamole, onion and cilantro on a corn tortilla.
+- **Asada Breakfast Tacos (3):** three corn tortillas with carne asada, guacamole, onion and cilantro.
 - **Chicken Breakfast:** a chicken plate with eggs, cheese and potato.
 
 ## Make it a bowl
