@@ -15,12 +15,13 @@ Breakfast burritos, tacos & more. Every burrito can be made as a bowl. Current p
 - **Ranchero Burrito** *(Fan favorite)*: Runny eggs, beans, cheese, green salsa and sour cream.
 - **Breakfast Burrito** *(Fan favorite)*: Your choice of meat, like bacon, with eggs, potato and cheese. Pair it with an ice-cold drink, café de olla and a dessert.
 - **Breakfast Asada Burrito**: Carne asada, eggs, cheese and potato in a flour tortilla.
+- **Huevos & Winnies Burrito**: Grilled winnies, eggs, potato and cheese. New.
 - **Nopal Burrito**: Eggs, beans, cheese and nopales.
 - **Miles' Burrito**: Eggs, beans and cheese.
 - **Mia's Burrito**: Egg, potato and cheese.
+- **Asada Breakfast Tacos (3)**: Three corn tortillas with carne asada, guacamole, onion and cilantro.
 - **Chicken Breakfast**: A chicken plate with eggs, cheese and potato.
 - **Breakfast Tacos (3)**: Three corn tortillas filled with your choice of protein, eggs, cheese and potatoes.
-- **Asada Breakfast Tacos (3)**: Three corn tortillas with carne asada, guacamole, onion and cilantro.
 
 ## Burritos
 
