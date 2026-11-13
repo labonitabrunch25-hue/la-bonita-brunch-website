@@ -45,6 +45,10 @@ Yes. Coffee is free for veterans. Just let us know at the window.
 
 Yes. We have tables and umbrellas next to the truck where you can eat or wait for your order.
 
+## Have you won any awards?
+
+Yes. La Bonita Brunch won the 2026 Battle of the Food Trucks, voted by listeners of Rock 98.3 The Twins in Central Oregon.
+
 ## Are your eggs fresh?
 
 Yes. We crack real eggs for every order. We never use powdered or pre-packaged eggs.

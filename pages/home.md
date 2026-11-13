@@ -1,6 +1,6 @@
 ---
 title: "La Bonita Brunch | Breakfast Burritos & Lunch in Redmond, OR"
-description: "Family-owned Mexican breakfast & lunch food truck in Redmond, OR. Homemade breakfast burritos, tacos and flautas with fresh-cracked eggs. Order ahead for pickup or delivery."
+description: "Family-owned Mexican breakfast & lunch food truck in Redmond, OR. Award-winning breakfast burritos, tacos and flautas made with fresh-cracked eggs."
 url: https://labonitabrunch.net/
 ---
 
@@ -36,6 +36,14 @@ Order ahead and we'll have it hot when you pull up. See today's full menu and pr
 Online orders until 2:00 pm weekdays and 1:30 pm Saturday. Prefer delivery? [Order on DoorDash](https://www.doordash.com/store/la-bonita-brunch-redmond-35873245/).
 
 [Start your order](https://la-bonita-brunch-redmond.cloveronline.com/menu/all)
+
+## Our story: family-run, award-winning
+
+A family food truck on NW 6th St, voted Central Oregon's 2026 food truck champion.
+
+**Made by our family.** La Bonita Brunch is run by Emmy and Oscar out of our food truck at 958 NW 6th St in Redmond. We're family-owned, women-owned and Latino-owned, and we speak English and Spanish at the window. Everything is made to order: real eggs cracked for every burrito, tortillas fresh off the griddle and green and habanero salsas made by hand.
+
+**2026 Champion: Battle of the Food Trucks.** Rock 98.3 The Twins listeners voted La Bonita Brunch the winner of the 2026 Battle of the Food Trucks. Thank you to everyone who voted for us.
 
 ## Frequently asked questions
 
