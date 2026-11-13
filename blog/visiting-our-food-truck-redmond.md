@@ -5,7 +5,7 @@ url: https://labonitabrunch.net/blog/visiting-our-food-truck-redmond
 date: 2026-11-09
 author: La Bonita
 excerpt: "Where to find our Redmond food truck, when we're open, how to order ahead or get delivery, and what to expect when you get here."
-seo_title: "La Bonita Brunch Food Truck in Redmond, OR: Hours and Location"
+seo_title: "Food Truck Hours & Location in Redmond, OR"
 seo_description: "Visiting La Bonita Brunch at 958 NW 6th St, Redmond, OR: hours, ordering ahead, DoorDash delivery, seating, pets and Spanish-speaking service."
 image: https://images.squarespace-cdn.com/content/v1/6a99a8c673bc423a39f07352/1794294857611-SA1OO04IE2KRC1S1II7F/la-bonita-fresh-eggs-griddle.jpg
 ---
@@ -43,3 +43,51 @@ We have tables and umbrellas next to the truck, so you can eat here or wait for 
 - Every egg is cracked fresh when you order.
 
 New here? Read [what to order on your first visit](https://labonitabrunch.net/blog/first-time-what-to-order) or [see the full menu](https://labonitabrunch.net/menu).
+
+## What to order on your first visit
+
+Start with the Ranchero Burrito: runny eggs, beans, cheese, green salsa and sour cream. If you want meat, the Breakfast Burrito with bacon or the Broadway Burrito won't let you down. For the table, add Day's Tacos or Las Flautas, and finish with churro bites. [Here's our full guide for first-timers](https://labonitabrunch.net/blog/first-time-what-to-order).
+
+## Look for the champion's truck
+
+In 2026, Rock 98.3 The Twins listeners voted La Bonita Brunch the winner of the [2026 Battle of the Food Trucks](https://labonitabrunch.net/#story). You'll find us in the same spot on NW 6th St, run by Emmy and Oscar and our family.
+
+## The menu at a glance
+
+- **Breakfast burritos:** the Ranchero, Breakfast Burrito, Breakfast Asada, Huevos & Winnies, Nopal, Miles' and Mia's.
+- **Lunch burritos:** the Broadway, Asada, Chicken, Fish, Shrimp, Chile Relleno and Bean & Cheese.
+- **Tacos and flautas:** Day's Tacos, Las Flautas, and asada, shrimp, chicken, fish, chile relleno and bean and cheese tacos.
+- **Sweets:** churro bites with cajeta and carlota, our no-bake Mexican icebox cake.
+- **Drinks:** café de olla, Mexican Coca-Cola, Jarritos, juice, iced tea, Red Bull and water.
+
+[See every item with photos on our menu page](https://labonitabrunch.net/menu).
+
+## Visiting questions
+
+**How long does an order take?**
+
+Everything is made to order. To skip the wait, order ahead online and pick up at the window.
+
+**Are you open on Sunday?**
+
+No. We're open Monday through Saturday and closed on Sunday.
+
+**Can I bring my dog?**
+
+Yes. Pets are welcome at our tables.
+
+**Do you speak Spanish?**
+
+Sí. ¡Hablamos español!
+
+**Do you deliver?**
+
+Yes, through DoorDash.
+
+**Do you have meatless options?**
+
+Yes. The Ranchero, Nopal, Miles', Mia's and Bean & Cheese burritos, Day's Tacos and the Bean N Cheese Taco have no meat.
+
+**Do veterans get a discount?**
+
+Coffee is free for veterans. Just let us know at the window.
